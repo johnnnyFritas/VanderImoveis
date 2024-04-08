@@ -1,0 +1,380 @@
+.header__options__filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__options__filter-title {
+    text-transform: uppercase;
+    color: var(--cor-quaternaria);
+}
+
+.header__options__filter-div {
+    display: flex;
+    gap: 2rem;
+}
+
+.header__options__filter-div-região,
+.header__options__filter-div-finalidade,
+.header__options__filter-div-tipo {
+    background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
+    border: 1px solid var(--cor-quaternaria);
+}
+
+#tipo,
+#bairro,
+#regiao {
+    padding: .5rem 1.5rem;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--cor-quaternaria);
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+}
+
+
+#finalidade {
+    padding: .5rem 3rem;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--cor-quaternaria);
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.header__options__filter-search {
+    padding: .5rem 2rem;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--cor-quaternaria);
+    transition: box-shadow 1s ease; 
+    background-color: #8d7f6e;
+    border: 1px solid #8d7f6e;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.header__options__filter-search:hover {
+    box-shadow: inset 200px 0 0 #7a6953;
+    border: 1px solid #7a6953;
+    color: var(--cor-principal);
+    transition: 1s;
+}
+
+.header__options__houses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 2rem;
+    padding-bottom: 19rem;
+}
+
+.header__options__houses-div {
+    display: none;
+}
+
+/* filter images animations */
+
+@keyframes leftToRight {
+    0% {
+        right: 500rem;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes apareceNf {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: var(--cor-quaternaria);
+    }
+}
+
+.header__options__houses-piata-Vis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 0rem;
+    width: 50%;
+    border: 1px solid #7a6953;
+    border-radius: 10px;
+    background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundStatic.jpg") no-repeat center;
+    transition: 1.4s;
+    position: relative;
+    cursor: pointer;
+
+    animation-name: leftToRight;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.header__options__houses-mar-Vis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 0rem;
+    width: 50%;
+    border: 1px solid #7a6953;
+    border-radius: 10px;
+    background: url("../assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundStatic.png") no-repeat center;
+    transition: 1.4s;
+    position: relative;
+    cursor: pointer;
+
+    animation-name: leftToRight;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.header__options__houses-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--cor-principal);
+}
+
+.header__options__houses-option-paragraph {
+   color: transparent;
+   font-family: var(--fonte-terciaria);
+   font-size: 24px;
+   width: 90%;
+}
+
+.header__options__houses-anchor {
+    font-size: 21px;
+    font-weight: 500;
+    border: 1px solid var(--cor-quaternaria);
+    border-radius: 8rem;
+    background-color: var(--cor-quaternaria);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-principal);
+    padding: .9rem 3rem;
+    transition: 1s;
+}
+
+.header__options__houses-anchor:hover {
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-quaternaria);
+    color: var(--cor-quinaria);
+    transition: 1s;
+}
+
+.header__options__houses-nf {
+    display: none;
+}
+
+.header__options__houses-nf-Vis{
+    font-size: 26px;
+    color: var(--cor-quaternaria);
+    font-weight: 600;
+    width: 80%;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+
+    animation-name: apareceNf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+/* The code for all of the filter animations are right below */
+.mouseIn-animation {
+    gap: 4.5rem;
+}
+
+.filterParagraphIn {
+    font-size: 20px;
+    color: var(--cor-principal);
+    font-family: var(--fonte-terciaria);
+    width: 90%;
+    text-transform: uppercase;
+    transition: 1.4s;
+
+    animation-name: filterParagraphIn;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes filterParagraphIn {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: var(--cor-principal);
+    }
+}
+
+@keyframes filterParagraphOut {
+    0% {
+        color: var(--cor-principal);
+    }
+
+    100% {
+        color: transparent;
+    }
+}
+
+@keyframes backgroundAnimationMar {
+    0% {
+        background: url("../assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundStatic.png") no-repeat center;
+    }
+
+    100% {
+        background: url("../assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundTransparent.png") no-repeat center;
+    }
+}
+
+@keyframes backgroundAnimationPiata {
+    0% {
+        background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundStatic.jpg") no-repeat center;
+    }
+
+    100% {
+        background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundTransparent.png") no-repeat center;
+    }
+}
+
+.background-animationPiata {
+    background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundTransparent.png") no-repeat center;
+
+    animation: backgroundAnimationPiata;
+    animation-duration: 1.4s;
+}
+
+.background-animationMar {
+    background: url("../assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundTransparent.png") no-repeat center;
+
+    animation: backgroundAnimationMar;
+    animation-duration: 1.4s;
+}
+
+.filterParagraphOut {
+    font-size: 20px;
+    color: transparent;
+    font-family: var(--fonte-terciaria);
+    text-transform: uppercase;
+    width: 90%;
+
+    animation-name: filterParagraphOut;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+}
+/* End of filter animations */
+
+/* adjustments for 1366px width screens AND lower! */
+@media screen and (max-width: 1366px) {
+
+    .header__options__filter-title {
+        font-size: 26px;
+    }
+
+    #finalidade,
+    #regiao,
+    #tipo {
+        font-size: 18px;
+    }
+
+    .header__options__filter-search {
+        font-size: 18px;    
+    }
+
+    @media screen and (max-width: 1024px) {
+        .header__options__filter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .header__options__filter-title {
+            font-size: 28px;
+            font-weight: 600;
+        }
+    
+        .header__options__filter-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .header__options__filter-div-finalidade,
+        .header__options__filter-div-região,
+        .header__options__filter-div-tipo {
+            background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
+            border: 1px solid var(--cor-quinaria);
+        }
+    
+        .header__options__houses {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .header__options__houses-mar-Vis {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 0rem;
+            width: auto;
+            border: 1px solid #7a6953;
+            border-radius: 10px;
+            background: transparent;
+        }
+    
+        .header__options__houses-piata-Vis {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 0rem;
+            width: auto;
+            border: 1px solid #7a6953;
+            border-radius: 10px;
+            background: transparent;
+        }
+    
+        .header__options__houses-title {
+            font-size: 32px;
+            text-transform: uppercase;
+            color: var(--cor-quinaria);
+        }
+    
+        .header__options__houses-option-paragraph{
+            width: 90%;
+            font-size: 20px;
+            color: var(--cor-quaternaria);
+            font-weight: 400;
+            text-align: center;
+            padding: 2rem 0;
+            text-transform: uppercase;
+        }
+    
+        #finalidade {
+            padding: .5rem 2rem;
+        }
+    
+        #regiao,
+        #tipo {
+            padding: .5rem;
+            text-align: center;
+        }
+    }
+}
