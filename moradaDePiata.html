@@ -85,8 +85,8 @@
             </div> 
         </section>
         <section class="slidesAp">
-            <section class="ap__plantas">
-                <h2 class="ap__plantas-title">Plantas:</h2>
+            <section class="slidesAp__plantas">
+                <h2 class="slidesAp__plantas-title">Plantas:</h2>
                 <div class="swiper swiper-ap-plantas">
                     <div class="swiper-wrapper button-next-ajuste">
                         <div class="swiper-slide"><img src="assets/Morada-Piata/Planta1-MoradaP.jpg" alt="Planta do apartamento Morada de Piatã"></div>
@@ -102,8 +102,8 @@
                     <div class="swiper-scrollbar"></div>
                 </div>
             </section>
-            <section class="ap__plantas">
-                <h2 class="ap__plantas-title">Localização:</h2>
+            <section class="slidesAp__plantas">
+                <h2 class="slidesAp__plantas-title">Localização:</h2>
                 <div class="swiper swiper-ap-plantas">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="assets/Morada-Piata/moradaP-Neighborhood.jpg" alt="Complexo Morada de Piatã"></div>
@@ -116,58 +116,62 @@
             
                     <div class="swiper-scrollbar"></div>
                 </div>
-                <div class="moradaP__plantas-localização">
-                    <p class="moradaP__plantas-localização-paragrafo">Seu apartamento em Salvador está no Morada de Piatã, o lar que você e sua família esperavam. Tenha tudo que você precisa próximo, supermercados, postos de combustível, escolas e praias.</p>
+                <div class="slidesAp__plantas__loc">
+                    <p class="slidesAp__plantas__loc-paragraph">Seu apartamento em Salvador está no Morada de Piatã, o lar que você e sua família esperavam. Tenha tudo que você precisa próximo, supermercados, postos de combustível, escolas e praias.</p>
                 </div>
             </section>
         </section>
-        </section>
-    <section class="moradaP__final">
-        <a href="https://wa.me/557192516350" class="moradaP__final-titulo">Se interessou? Ou gostaria de saber mais detalhes?</a>
-        <a href="https://wa.me/557192516350" class="moradaP__final-botão">Fale comigo agora!</a>
     </section>
-    <!-- Inicio do style footer -->
+    <section class="apFinal">
+        <a href="https://wa.me/557192516350" class="apFinal-title">Se interessou? Ou gostaria de saber mais detalhes?</a>
+        <a href="https://wa.me/557192516350" class="mapFinal-anchor">Fale comigo agora!</a>
+    </section>
+    <!-- style footer -->
     <footer>
         <section class="footer">
-            <div id="form" class="form">
-                <h1 class="form__titulo">Fale Comigo:</h1>
-                <form class="form__preencher">
-                    <div class="form__preencher-div">
+            <div id="form" class="footer__form">
+                <h1 class="footer__form-title">Fale Comigo:</h1>
+                <form class="footer__form__fill">
+                    <div class="footer__form__fill-div">
                         <label for="nome">Nome:</label>
-                        <input class="input__form" autocomplete="name" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" minlength="4" required>
+                        <input class="footer__form__fill-div-input" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" minlength="3" required>
                     </div>
-                    <div class="form__preencher-div">
+                    <div class="footer__form__fill-div">
                         <label for="email">Email:</label>
-                        <input class="input__form" autocomplete="email" type="email" name="email" id="email" placeholder="Digite seu email!" minlength="6" required>
+                        <input class="footer__form__fill-div-input" type="email" name="email" id="email" placeholder="Digite seu email   " minlength="6" required>
                     </div>
-                    <div class="form__preencher-div">
+                    <div class="footer__form__fill-div">
                         <label for="mensagem">Mensagem:</label>
-                        <textarea class="input__form-mensagem" name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Digite sua mensagem" maxlength="1000" required></textarea>
+                        <textarea class="footer__form__fill-div-input-txtA" name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Digite sua mensagem" maxlength="1000" required></textarea>
                     </div>
-                    <button class="button-submit" type="submit">Enviar</button>
+                    <button class="footer__form__fill-button-submit" type="submit">Enviar</button>
                 </form>
             </div>
-            <div class="contatos">
-                <h1 class="contatos__titulo">Contatos:</h1>
-                <div class="contatos__whatsapp">
-                    <img src="../assets/Icons/icons8-whatsapp-64.png" alt="Simbolo Whatsapp">
-                    <a href="https://wa.me/557192516350" target="_blank" class="contatos__whatsapp__texto">Whatsapp</a>
+            <div class="footer__contacts">
+                <h1 class="footer__contacts-title">Contatos:</h1>
+                <div class="footer__contacts__wpp">
+                    <a href="https://wa.me/557192516350">
+                        <img src="../assets/Icons/icons8-whatsapp-64.png" alt="Simbolo Whatsapp">
+                    </a>
+                    <a href="https://wa.me/557192516350" target="_blank" class="footer__contacts__wpp-anchor">Whatsapp</a>
                 </div>
-                <div class="contatos__instagram">
-                    <img src="../assets/Icons/icons8-instagram-64.png" alt="Simbolo Instagram">
-                    <a href="https://www.instagram.com/vanderleiamorimcorretor/" class="contatos__instagram__texto" target="_blank">Instagram</a>
+                <div class="footer__contacts__insta">
+                    <a href="https://www.instagram.com/vanderleiamorimcorretor/">
+                        <img src="../assets/Icons/icons8-instagram-64.png" alt="Simbolo Instagram">
+                    </a>
+                    <a href="https://www.instagram.com/vanderleiamorimcorretor/" class="footer__contacts__insta-anchor" target="_blank">Instagram</a>
                 </div>
-                <div class="contatos__telefone">
+                <div class="footer__contacts__telf">
                     <img src="../assets/Icons/icons8-telefone-64.png" alt="Simbolo de um telefone">
-                    <span class="contatos__telefone__texto" target="_blank">71 9251-6350</span>
+                    <span class="footer__contacts__telf-anchor" target="_blank">71 9251-6350</span>
                 </div>
             </div>
         </section>
-        <section class="footer__copyright">
-            <span class="footer__copyright__texto">₢ Vanderlei Amorim Corretor Imobiliário - Todos os direitos reservados.</span>
+        <section class="copyright">
+            <span class="copyright-txt">₢ Vanderlei Amorim Corretor Imobiliário - Todos os direitos reservados.</span>
         </section>
     </footer>
-    <!-- Fim do style footer -->   
+    <!-- style footer's end --> 
     <!-- Script swiper -->
     <script>
         const swiper = new Swiper('.swiper', {
