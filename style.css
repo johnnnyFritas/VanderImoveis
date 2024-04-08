@@ -1,0 +1,49 @@
+@import url("styles/adjustments-ap.css");
+@import url("styles/ap.css");
+@import url("styles/filter.css");
+@import url("styles/footer.css");
+@import url("styles/header.css");
+@import url("styles/highlights.css");
+@import url("styles/moradaP.css");
+@import url("styles/reset.css");
+
+:root {
+    --fonte-principal: 'Inter';
+    --fonte-secundaria: 'Poppins';
+    --fonte-terciaria: 'Montserrat';
+    --fonte-quaternaria: 'Helvetica Neue', sans-serif;
+
+    --cor-principal: white;
+    --cor-secundaria: #EAD7BB;
+    --cor-terciaria: #AE445A;
+    --cor-quaternaria: #e2b474;
+    --cor-quinaria: #113946;
+    --preto: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-quinaria);
+    font-size: 32px;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+.button-submit > img {
+    animation: anima-loading 1s infinite linear;
+}
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        overflow-x: hidden;
+    }
+
+    .header__opções > a > img {
+        width: 80%;
+    }
+}
