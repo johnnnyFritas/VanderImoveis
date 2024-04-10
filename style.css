@@ -4,7 +4,6 @@
 @import url("styles/footer.css");
 @import url("styles/header.css");
 @import url("styles/highlights.css");
-@import url("styles/moradaP.css");
 @import url("styles/reset.css");
 
 :root {
@@ -19,6 +18,8 @@
     --cor-quaternaria: #e2b474;
     --cor-quinaria: #113946;
     --preto: #000000;
+    --anchor-color: #8d7f6e;
+    --anchor-color-dark: #7a6953;
 }
 
 html {

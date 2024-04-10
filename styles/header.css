@@ -8,27 +8,25 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--cor-quinaria);
-    gap: 4rem;
     transition: 1.4s;
 }
 
 .header__options > a > img {
-    margin-top: -11rem;
+    margin-top: -8rem;
+    width: 80%;
 }
 
-.header__options-contact,
 .header__options-home {
-    font-size: 32px;
+    font-size: 28px;
     color: var(--cor-quaternaria);
-    margin-top: -9rem;
+    margin-top: -8rem;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
     transition: 1.4s;
 }
 
-.header__options-contact:hover,
-.header__options-home:hover {
+.header__options-contact:hover {
     color: var(--cor-terciaria);
     border-bottom: 1px solid var(--cor-terciaria);
     text-transform: uppercase;

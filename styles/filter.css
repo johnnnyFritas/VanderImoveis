@@ -3,11 +3,76 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin: -4rem 0 3rem 0;
 }
 
-.header__options__filter-title {
+@keyframes filterH2WelAnimation {
+    0% {
+        font-size: 0;
+        text-transform: uppercase;
+        color: var(--cor-quinaria);
+    }
+
+    50% {
+        font-size: 60px;
+        text-transform: uppercase;
+        color: var(--cor-quaternaria);
+    }
+
+    100% {
+        font-size: 0px;
+        text-transform: uppercase;
+        color: var(--cor-quinaria);
+    }
+}
+
+.header__options__filter-welAnim {
+    font-size: 0;
+    color: var(--cor-quaternaria);
+}
+
+.header__options__filter-welAnim2 {
+    font-size: 0;
+    color: var(--cor-quaternaria);
+}
+
+.animationFilterHel {
+    font-size: 0;
+
+    animation-name: filterH2WelAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.animationFilterWel {
+    font-size: 0;
+
+    animation-name: filterH2WelAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes filterAnimation {
+    0% {
+        color: var(--cor-quinaria);
+        font-size: 0;
+    }
+
+    100% {
+        color: var(--cor-quaternaria);
+        font-size: 28px;
+    }
+}
+
+.header__options__filter-titleAnim {
     text-transform: uppercase;
     color: var(--cor-quaternaria);
+    position: relative;
+    font-size: 28px;
+
+    animation-name: filterAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
 .header__options__filter-div {
@@ -15,17 +80,48 @@
     gap: 2rem;
 }
 
-.header__options__filter-div-região,
-.header__options__filter-div-finalidade,
-.header__options__filter-div-tipo {
-    background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
-    border: 1px solid var(--cor-quaternaria);
+@keyframes filterDivAnimation {
+    0% {
+        background: none;
+        border: 1px solid var(--cor-quinaria);
+    }
+
+    100% {
+        background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
+        border: 1px solid var(--cor-quaternaria);
+    }
 }
 
-#tipo,
-#bairro,
-#regiao {
-    padding: .5rem 1.5rem;
+.animationFilterDiv {
+    background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
+    border: 1px solid var(--cor-quaternaria);
+
+    animation-name: filterDivAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes filterIdAnimation {
+    0% {
+        color: var(--cor-quinaria);
+    }
+
+    100% {
+        color: var(--cor-quaternaria);
+    }
+}
+
+.header__options__filter-div-reg,
+.header__options__filter-div-type,
+.header__options__filter-div-fin {
+    font-size: 0;
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.animationFilterId {
+    padding: .5rem 1rem;
     font-size: 20px;
     font-family: var(--fonte-principal);
     text-align: center;
@@ -35,10 +131,14 @@
     background: transparent;
     border: none;
     -webkit-appearance: none;
+
+    animation-name: filterIdAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
 
-#finalidade {
+.animationFilterId2 {
     padding: .5rem 3rem;
     font-size: 20px;
     font-family: var(--fonte-principal);
@@ -49,9 +149,33 @@
     background: transparent;
     border: none;
     -webkit-appearance: none;
+
+    animation-name: filterIdAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes filterButtonAnimation {
+    0% {
+        color: var(--cor-quinaria);
+        background-color: var(--cor-quinaria);
+        border: 1px solid var(--cor-quinaria);
+    }
+
+    100% {
+        color: var(--cor-quaternaria);
+        background-color: var(--anchor-color);
+        border: 1px solid var(--anchor-color);
+    }
 }
 
 .header__options__filter-search {
+    font-size: 0;
+    background: transparent;
+    border: none;
+}
+
+.animationFilterButton {
     padding: .5rem 2rem;
     font-size: 20px;
     font-family: var(--fonte-principal);
@@ -59,16 +183,20 @@
     font-weight: 600;
     color: var(--cor-quaternaria);
     transition: box-shadow 1s ease; 
-    background-color: #8d7f6e;
-    border: 1px solid #8d7f6e;
+    background-color: var(--anchor-color);
+    border: 1px solid var(--anchor-color);
     border-radius: 32px;
     cursor: pointer;
     transition: 1s;
+
+    animation-name: filterButtonAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }
 
 .header__options__filter-search:hover {
-    box-shadow: inset 200px 0 0 #7a6953;
-    border: 1px solid #7a6953;
+    box-shadow: inset 200px 0 0 var(--anchor-color-dark);
+    border: 1px solid var(--anchor-color-dark);
     color: var(--cor-principal);
     transition: 1s;
 }
@@ -79,7 +207,7 @@
     justify-content: center;
     width: 80%;
     gap: 2rem;
-    padding-bottom: 19rem;
+    padding-bottom: 2rem;
 }
 
 .header__options__houses-div {

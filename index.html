@@ -29,28 +29,43 @@
     <!-- style header -->
     <header class="header">
         <div class="header__options">
-            <a href="index.html"><img src="assets/Outros-Assets/Logo Marca Dagua.png" alt="Logo Vanderlei Amorim Corretor de Imóveis"></a>
-            <a class="header__options__contact" href="#form">Contato</a>
+            <a style="cursor: default;" href="index.html"><img src="assets/Outros-Assets/Logo Marca Dagua.png" alt="Logo Vanderlei Amorim Corretor de Imóveis"></a>
+
+            <!-- Welcome animation -->
+            <h2 id="filterH2Anim" class="header__options__filter-welAnim">Olá!</h2>
+            <h2 id="filterH2Anim2" class="header__options__filter-welAnim2">Bem Vindo!</h2>
+
             <!-- Style filter -->
             <div class="header__options__filter">
-                <h2 class="header__options__filter-title">Filtro:</h2>
+                
+                
+
+
+                <!-- Title for animation "Filtro" -->
+                <h2 id="filterH2anim3-title"></h2>
                 <div class="header__options__filter-div">
-                    <div class="header__options__filter-div-região">
-                        <select name="regiao" id="regiao">
+
+                    <!-- div for animation on the filter -->
+                    <div id="filterDivAnim-reg">
+                        <select name="regiao" class="header__options__filter-div-reg" id="regiao">
                             <option value="regiao">Região</option>
                             <option value="lauro">Lauro de Freitas</option>
                             <option value="salvador">Salvador</option>
                         </select>
                     </div>
-                    <div class="header__options__filter-div-finalidade">
-                        <select name="finalidade" id="finalidade">
+
+                    <!-- div for animation on the filter -->
+                    <div id="filterDivAnim-fin">
+                        <select name="finalidade" id="finalidade" class="header__options__filter-div-fin">
                             <option value="finalidade">Finalidade</option>
                             <option value="comprar">Comprar</option>
                             <option value="alugar">Alugar</option>
                         </select>
                     </div>
-                    <div class="header__options__filter-div-tipo">
-                        <select name="tipo" id="tipo">
+
+                    <!-- div for animation on the filter -->
+                    <div id="filterDivAnim-type">
+                        <select name="tipo" id="tipo" class="header__options__filter-div-type">
                             <option value="tipo">Tipo</option>
                             <option value="apartamento">Apartamento</option>
                             <option value="casa">Casa</option>
@@ -74,36 +89,45 @@
             </div>
         </div>
         <!-- style filter's end -->
-        <img class="header__image" src="assets/Outros-Assets/BannerDeFundo (1900 x 500 px).png" alt="">
+        <img style="overflow-x: hidden;" class="header__image" src="assets/Outros-Assets/BannerDeFundo (1900 x 500 px).png" alt="">
     </header>
     <!-- style header's end -->
     <!-- style Highlights -->
-    <section class="highlights">
-        <h2 class="highlights-title">Apartamento em Destaque</h2>
-        <div class="highlights__apt">
-            <h2 class="highlights__apt-title">Solar Vista Mar</h2>
+    <img id="fotoZoom" src="" alt="">
+    <section id="highlightsSection" class="highlights">
+        <h2 id="highlights-title" class="highlights-title">Apartamento em Destaque</h2>
+        <div id="highlights__apt" class="highlights__apt">
+
+            <h2 id="highlights__apt-title" class="highlights__apt-title">Solar Vista Mar</h2>
+
              <!-- main container slider -->
             <div class="swiper">
                  <!-- wrapper -->
                 <div class="swiper-wrapper">
                     <!-- div area (to add more images just put more div with the same class 'swiper-slide')-->
-                    <div class="swiper-slide"><img src="assets/vista-mar/Piscina-VistaM.jpg" alt="Área da piscina do condomínio Vista-Mar"></div>
-                    <div class="swiper-slide"><img src="assets/vista-mar/PetPlace-VistaM.jpg" alt="Área pet do condomínio Vista-Mar"></div>
+
+                    <div class="swiper-slide"><img id="foto0" src="assets/vista-mar/Piscina-VistaM.jpg" alt="Área da piscina do condomínio Vista-Mar"></div>
+                    <div class="swiper-slide"><img id="foto1" src="assets/vista-mar/PetPlace-VistaM.jpg" alt="Área pet do condomínio Vista-Mar"></div>
+
                 </div>
+
                  <!-- swiper pagination -->
+
                 <div class="swiper-pagination"></div>
   
                 <!-- buttons on each side of the image -->
+
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
 
                  <!-- scrollbar -->
+
                 <div class="swiper-scrollbar"></div>
 
                  <!-- any doubts just look at the swiper API DOCUMENTATION -->
             </div>
-            <p class="highlights__apt-exp">Apartamentos de 2 quartos em Pirajá, em condomínio fechado com elevador, com opção de varanda e vaga de garagem. <strong>Aqui o seu sonho se torna realidade...</strong></p>
-            <a href="vistaMar.html" class="highlights__apt-anchor">Saiba Mais!</a>
+            <p id="highlights__apt-exp" class="highlights__apt-exp">Apartamentos de 2 quartos em Pirajá, em condomínio fechado com elevador, com opção de varanda e vaga de garagem. <strong>Aqui o seu sonho se torna realidade...</strong></p>
+            <a id="highlights__apt-anchor" href="vistaMar.html" class="highlights__apt-anchor">Saiba Mais!</a>
         </div>
     </section>
     <!-- Script swiper -->
@@ -178,5 +202,7 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/filterFunctionality.js"></script>
     <script src="scripts/filterAnimations.js"></script>
+    <script src="scripts/welcomeMesage.js"></script>
+    <script src="scripts/fotoZoom.js"></script>
 </body>
 </html>

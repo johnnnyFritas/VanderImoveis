@@ -20,6 +20,41 @@
     width: 50%;
     margin: 1rem 0;
     cursor: pointer;
+    text-align: center;
+}
+
+@keyframes highlightsAnimation {
+    0% {
+        width: 30%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.fotoZoomAdjust {
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 18px;
+    cursor: pointer;
+    position: sticky;
+
+    animation-name: highlightsAnimation;
+    animation-duration: 1s;
+}
+
+.hideFotoZoomAdjust {
+    display: none;
+}
+
+.hideFotoZoom {
+    display: none;
+}
+
+.hideH {
+    display: none;
 }
 
 .swiper-pagination {
