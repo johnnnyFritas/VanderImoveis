@@ -61,14 +61,14 @@
     margin-top: .5rem; 
 }
 
-.swiper-slide img {
-    width: 100%;
+.swiper-slide  img {
+    width: 70%;
     border-radius: 18px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: var(--cor-principal);
+    color: var(--preto);
 }
 
 .highlights__apt {

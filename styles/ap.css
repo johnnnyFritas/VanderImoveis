@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    padding: 2rem 0;
+    background: url(../assets/vista-mar/);
 }
 
 .ap__intro-title {
@@ -69,19 +70,22 @@
 }
 
 .ap__intro__loc-anchor {
-    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 30px;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--cor-principal);
     background-color: var(--cor-quaternaria);
     padding: 1.8rem;
-    border-radius: 40px;
+    border-radius: 80px;
     transition: 1.4s;
 }
 
 .ap__intro__loc-anchor:hover {
-    color: var(--cor-quinaria);
-    background-color: var(--cor-principal);
+    color: var(--cor-principal);
+    background-color: var(--cor-quinaria);
     transition: 1.4s;
     box-shadow: 10px 10px 0 black;
 }
@@ -89,68 +93,130 @@
 .slidesAp {
     border-top: 1px solid var(--cor-quaternaria);
     border-bottom: 2px solid var(--cor-quaternaria);
-    background-color: #bdbdbd;
-    margin: 5rem 0;
+    background-color: #dbd5d5;
 }
 
 .slidesAp__presentation {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 5rem 0;
 }
 
-.slidesAp__presentation-title {
-    font-size: 32px;
+.slidesAp__presentation-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 40%;
+}
+
+.slidesAp__presentation-div-title {
+    font-size: 28px;
     text-transform: uppercase;
-    font-weight: 600;
-    color: var(--cor-quaternaria);
-    border-bottom: 1px solid var(--cor-quaternaria);
+    font-weight: 800;
+    color: var(--cor-quinaria);
+    border-bottom: 3px solid var(--cor-quinaria);
     padding-bottom: 10px;
 }
 
-.swiper-ap {
-    width: 50%;
+.slidesAp__presentation-div-text {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
 }
 
-.slidesAp__plantas {
+.slidesAp__presentation-div-text > p {
+    font-size: 20px;
+    color: var(--cor-quinaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.slidesAp__presentation-div-text > li {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.slidesAp__presentation-div-text > li > h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.zoomAp {
+    width: 120%;
+}
+
+.centerFotoZoom {
+    margin: auto;
+    display: block;
+    width: 65%;
+    padding: 5rem 0;
+    cursor: pointer;
+}
+
+.hideSection {
+    display: none;
+}
+
+.resetFoto {
+    display: none;
+}
+
+.datasheet {
+    width: 75%;
+    margin: auto;
+    display: block;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem 0;
 }
 
-.slidesAp__plantas-title {
-    background-color: var(--cor-quaternaria);
-    border-radius: 32px;
-    color: var(--cor-principal);
+.datasheet__title {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.datasheet__title-content {
+    font-size: 28px;
     text-transform: uppercase;
-    padding: .5rem 1.2rem;
+    font-weight: 800;
+    margin: 2rem 0;
 }
 
-.swiper-ap-plantas {
-    width: 60%;
-}
-
-.swiper > .swiper-button-prev, 
-.swiper-button-next {
-    color: black;
-}
-
-.slidesAp__plantas__loc {
+.datasheet__leftSide-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
+    gap: 2rem;
 }
 
-.slidesAp__plantas__loc-paragraph {
-    font-size: 24px;
-    text-align: center;
+.datasheet__leftSide-list > li {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: .8rem;
+}
+
+.datasheet__leftSide-list > li > h2 {
+    font-size: 20px;
+    font-weight: 600;
     text-transform: uppercase;
-    margin: 3rem 0 0 0;
+}
+
+.datasheet__leftSide-list > li > div {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.datasheet__leftSide-list > li > p,
+.datasheet__leftSide-list > li > div > p{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: var(--fonte-secundaria);
 }
 
 .apFinal {
@@ -158,6 +224,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin: 8rem 0 2rem 0;
 }
 
 .apFinal-title {
