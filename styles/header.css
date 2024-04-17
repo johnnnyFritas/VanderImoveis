@@ -11,9 +11,65 @@
     transition: 1.4s;
 }
 
-.header__options > a > img {
+.header__options-LogImg {
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+
+.header__options-LogImg > a > img {
     margin-top: -8rem;
-    width: 80%;
+    margin-left: 22rem;
+    width: 50%;
+}
+
+.header__options-LogImg-Ent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+
+.header__options-LogImg-Ent-Act {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__options-LogImg-Ent-Act-But {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quaternaria);
+    background: transparent;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid var(--cor-quaternaria);
+    transition: 1.4s;
+}
+
+.header__options-LogImg-Ent-Act-But:hover {
+    color: var(--cor-terciaria);
+    transition: 1.4s;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.padding {
+    padding-right: 1rem;
+}
+
+.paddingL {
+    padding-left: .8rem;
+}
+
+.header__options-LogImg-Ent-ActReg {
+    display: none;
 }
 
 .header__options-home {
@@ -54,17 +110,17 @@
 
     @media screen and (max-width: 1024px) {
 
-        .header__image {
-            width: 130%;
-            margin-top: -10rem;
+        .header__options > a > img {
+            width: 50%;
+            margin-top: -4rem;
         }
     
         .header__options__contact {
             font-size: 28px;
         }
-        
-        .header__options > a > img {
-            margin-top: -6rem;
+
+        .header__image {
+            display: none;
         }
     }
 }

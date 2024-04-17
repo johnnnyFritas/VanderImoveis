@@ -11,8 +11,10 @@
     //     user VARCHAR(20) NOT NULL
     // )";
 
-    // if($mysqli->query($sql)) {
-    //     echo "Eba!";
+    // $sql = "ALTER TABLE user ADD senha VARCHAR(255)";
+
+    // if($mysqli->query($sql) === TRUE) {
+    //     echo "Conexão feita";
     // }else {
     //     echo $mysqli->error;
     // }

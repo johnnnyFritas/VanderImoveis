@@ -5,6 +5,7 @@
 @import url("styles/header.css");
 @import url("styles/highlights.css");
 @import url("styles/reset.css");
+@import url("styles/registro.css");
 
 :root {
     --fonte-principal: 'Inter';
@@ -34,8 +35,32 @@ body {
     overflow-x: hidden;
 }
 
-.button-submit > img {
+@keyframes anima-loading {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.button-submit {
     animation: anima-loading 1s infinite linear;
+}
+
+/* Console */
+.ComunicConsole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ComunicConsole-content {
+    font-family: var(--fonte-secundaria);
+    font-size: 32px;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 1024px) {

@@ -28,12 +28,16 @@ function showFoto() {
     fotoZoom.classList.remove('resetFoto');
     fotoZoom.classList.add('centerFotoZoom');
 
+    document.body.classList.add('hidden');
+
     sectionSlidesAp.classList.add('hideSection');
 }
 
 function hideFoto() {
     fotoZoom.classList.remove('centerFotoZoom');
     fotoZoom.classList.add('hideFotoZoom');
+
+    document.body.classList.remove('hidden');
 
     sectionSlidesAp.classList.remove('hideSection');
 }
@@ -68,12 +72,16 @@ function showFoto2() {
     fotoZoom2.classList.remove('resetFoto');
     fotoZoom2.classList.add('centerFotoZoom');
 
+    document.body.classList.add('hidden');
+
     sectionSlidesApPresentation.classList.add('hideSection');
 }
 
 function hideFoto2() {
     fotoZoom2.classList.remove('centerFotoZoom');
     fotoZoom2.classList.add('hideFotoZoom');
+
+    document.body.classList.remove('hidden');
 
     sectionSlidesApPresentation.classList.remove('hideSection');
 }

@@ -15,9 +15,9 @@
 }
 
 .footer__form-title {
-    font-size: 36px;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 26px;
 }
 
 .footer__form__fill{
@@ -33,21 +33,21 @@
     gap: 1rem;
 }
 
-label {
+.footer__form__fill-label {
     text-transform: uppercase;
     font-weight: 500;
     text-align: left;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .footer__form__fill-div-input {
-    padding: 1rem 0 1rem 1rem;
+    padding: .8rem 0 .8rem 1rem;
     border-radius: 6rem;
     border: 1px solid;
 }
 
 .footer__form__fill-div-input-txtA {
-    padding: 1rem 2rem 7rem 1rem;
+    padding: 1rem 2rem 5rem 1rem;
     border-radius: 1rem;
     text-align: left;
     font-size: 1rem;
@@ -83,7 +83,7 @@ label {
 }
 
 .footer__form__fill-button-submit {
-    padding: 1rem 5rem;
+    padding: .8rem 5rem;
     border-radius: 1rem;
     color: var(--cor-principal);
     background-color: black;
@@ -102,7 +102,7 @@ label {
 }
 
 .footer__contacts-title {
-    font-size: 30px;
+    font-size: 26px;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -116,7 +116,7 @@ label {
 .footer__contacts__insta-anchor,
 .footer__contacts__telf-anchor {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
     color: var(--preto);
     transition: 1.4s;

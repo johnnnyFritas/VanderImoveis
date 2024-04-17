@@ -1,8 +1,8 @@
 const formulario = document.querySelector("form");
-const pegaButao = document.querySelector(".button-submit");
+const pegaButao = document.querySelector(".footer__form__fill-button-submit");
 
 const chamaImagem =()=>{
-    pegaButao.innerHTML = '<img src="../assets/Icons/icons8-loading-48.png" class=".button-submit > img">';
+    pegaButao.innerHTML = '<img src="assets/Icons/icons8-loading-48.png" class="button-submit">';
 };
 
 const removeImagem =()=> {

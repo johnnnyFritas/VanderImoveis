@@ -28,7 +28,21 @@
 <body>
     <header class="header">
         <div class="header__options">
-            <a style="cursor: default;" href="index.html"><img src="assets/Outros-Assets/Logo Marca Dagua.png" alt="Logo Vanderlei Amorim Corretor de Imóveis"></a>
+            <div class="header__options-LogImg">
+                <a style="cursor: default;" href="index.html"><img src="assets/Outros-Assets/Logo Marca Dagua.png" alt="Logo Vanderlei Amorim Corretor de Imóveis"></a>
+                <div class="header__options-LogImg-Ent">
+                    <div class="header__options-LogImg-Ent-Act">
+                        <button class="header__options-LogImg-Ent-Act-But click padding">Login</button>
+                        <div class="header__options-LogImg-Ent-ActReg">
+                            <form method="post" action="login.php">
+                                <input type="text" name="username" autocomplete="username" id="username" placeholder="Usuário">
+                                <input type="password" name="password" autocomplete="current-password" id="password" placeholder="Senha">
+                            </form>
+                        </div>
+                    </div>
+                    <a class="header__options-LogImg-Ent-Act-But paddingL" style="border-right: none;" href="registro.html">Registrar-se</a>
+                </div>
+            </div>
 
             <h2 id="filterH2Anim" class="header__options__filter-welAnim">Olá!</h2>
             <h2 id="filterH2Anim2" class="header__options__filter-welAnim2">Bem Vindo!</h2>
@@ -123,15 +137,15 @@
                 <h1 class="footer__form-title">Fale Comigo:</h1>
                 <form class="footer__form__fill">
                     <div class="footer__form__fill-div">
-                        <label for="nome">Nome:</label>
+                        <label class="footer__form__fill-label" for="nome">Nome:</label>
                         <input class="footer__form__fill-div-input" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" minlength="3" required>
                     </div>
                     <div class="footer__form__fill-div">
-                        <label for="email">Email:</label>
+                        <label class="footer__form__fill-label" for="email">Email:</label>
                         <input class="footer__form__fill-div-input" type="email" name="email" id="email" placeholder="Digite seu email   " minlength="6" required>
                     </div>
                     <div class="footer__form__fill-div">
-                        <label for="mensagem">Mensagem:</label>
+                        <label class="footer__form__fill-label" for="mensagem">Mensagem:</label>
                         <textarea class="footer__form__fill-div-input-txtA" name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Digite sua mensagem" maxlength="1000" required></textarea>
                     </div>
                     <button class="footer__form__fill-button-submit" type="submit">Enviar</button>
@@ -141,18 +155,18 @@
                 <h1 class="footer__contacts-title">Contatos:</h1>
                 <div class="footer__contacts__wpp">
                     <a href="https://wa.me/557192516350">
-                        <img src="../assets/Icons/icons8-whatsapp-64.png" alt="Simbolo Whatsapp">
+                        <img src="assets/Icons/icons8-whatsapp-64.png" alt="Simbolo Whatsapp">
                     </a>
                     <a href="https://wa.me/557192516350" target="_blank" class="footer__contacts__wpp-anchor">Whatsapp</a>
                 </div>
                 <div class="footer__contacts__insta">
                     <a href="https://www.instagram.com/vanderleiamorimcorretor/">
-                        <img src="../assets/Icons/icons8-instagram-64.png" alt="Simbolo Instagram">
+                        <img src="assets/Icons/icons8-instagram-64.png" alt="Simbolo Instagram">
                     </a>
                     <a href="https://www.instagram.com/vanderleiamorimcorretor/" class="footer__contacts__insta-anchor" target="_blank">Instagram</a>
                 </div>
                 <div class="footer__contacts__telf">
-                    <img src="../assets/Icons/icons8-telefone-64.png" alt="Simbolo de um telefone">
+                    <img src="assets/Icons/icons8-telefone-64.png" alt="Simbolo de um telefone">
                     <span class="footer__contacts__telf-anchor" target="_blank">71 9251-6350</span>
                 </div>
             </div>
@@ -166,7 +180,6 @@
     <script src="scripts/filterFunctionality.js"></script>
     <script src="scripts/filterAnimations.js"></script>
     <script src="scripts/welcomeMesage.js"></script>
-    <script src="scripts/fotoZoom.js"></script>
     <script src="scripts/swiperScript.js"></script>
 </body>
 </html>

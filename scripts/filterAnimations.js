@@ -28,11 +28,11 @@ generalDiv.forEach(e => {
 //This will redirect whoever is clicking on any element of the filter's results (even the background).
 generalDiv.forEach(e => {
     e.children.item(0).addEventListener('click',()=> {
-        window.location.replace('https://www.vanderleiamorimcorretor.com.br/moradaDePiata.html');
+        window.location.replace('moradaDePiata.html');
     });
 
     e.children.item(1).addEventListener('click', ()=> {
-        window.location.replace('https://www.vanderleiamorimcorretor.com.br/vistaMar.html');
+        window.location.replace('vistaMar.html');
     });
 });
 
