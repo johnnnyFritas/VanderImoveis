@@ -38,7 +38,9 @@
 
             <h1 class="headerReg-content-title">Faça já seu cadastro para não perder nada!</h1>
 
-            <form method="post" onsubmit="verifySubmit()">
+            <iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+
+            <form id="form" method="post" action="registro.php" target="hidden_iframe">
                 <input type="text" name="username" id="username" placeholder="Nome do Usuário" autocomplete="username" required>
 
                 <p id="mesageUser" class="pReg"></p>
@@ -60,6 +62,7 @@
             </form>
 
         </section>
+
     </header>
     <script src="scripts/registro.js"></script>
 </body>

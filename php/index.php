@@ -36,7 +36,7 @@
 
                 <div class="header__options-LogImg-Ent">
 
-                    <a class="header__options-LogImg-Ent-Act-But paddingL borderDownResp" style="border-top: none;" href="/errorFile/constructPage.html">Registrar-se (Em contrução)</a>
+                    <a class="header__options-LogImg-Ent-Act-But paddingL borderDownResp" style="border-top: none;" href="registroUser.php">Registrar-se</a>
 
                     <a class="header__options-LogImg-Ent-Act-But click padding" href="vantagens.html">Como funciona nosso registro?</a>
 
@@ -53,85 +53,47 @@
                 <h2 id="filterH2anim3-title"></h2>
                 <div class="header__options__filter-div">
 
-                    <div id="filterDivAnim0">
-                        <select name="regiao" class="header__options__filter-div-reg" id="filter0">
-
+                    <div id="filterDivAnim-reg">
+                        <select name="regiao" class="header__options__filter-div-reg" id="regiao">
                             <option value="regiao">Região</option>
                             <option value="lauro">Lauro de Freitas</option>
                             <option value="salvador">Salvador</option>
-
                         </select>
                     </div>
 
-                    <div id="filterDivAnim1">
-                        <select name="finalidade" id="filter1" class="header__options__filter-div-fin">
-
+                    <div id="filterDivAnim-fin">
+                        <select name="finalidade" id="finalidade" class="header__options__filter-div-fin">
                             <option value="finalidade">Finalidade</option>
                             <option value="comprar">Comprar</option>
                             <option value="alugar">Alugar</option>
-
                         </select>
                     </div>
 
 
-                    <div id="filterDivAnim2">
-                        
-                        <select name="tipo" id="filter2" class="header__options__filter-div-type">
-
+                    <div id="filterDivAnim-type">
+                        <select name="tipo" id="tipo" class="header__options__filter-div-type">
                             <option value="tipo">Tipo</option>
                             <option value="apartamento">Apartamento</option>
                             <option value="casa">Casa</option>
-
                         </select>
                     </div>
                 </div>
                 <button id="botao" class="header__options__filter-search">Procurar</button>
             </div>
-            <div id="opt0" class="header__options__houses">
-
-                <div id="ap0" class="header__options__houses-div">
-
+            <div class="header__options__houses">
+                <div id="piata" class="header__options__houses-div">
                     <h2 class="header__options__houses-title">Morada de Piatã</h2>
-                    <p id="filter-text-animation" class="header__options__houses-option-paragraph">Sua ótima localização abre portas a uma vida tranquila...</p>
+                    <p id="filter-text-animation" class="header__options__houses-option-paragraph">Sua ótima localização abre portas a uma vida tranquila, localizado perto da orla...</p>
                     <a href="moradaDePiata.html" class="header__options__houses-anchor">Saiba Mais...</a>
-
                 </div>
-
-                <div id="ap1" class="header__options__houses-div">
-
-                    <h2 class="header__options__houses-title">Solar Vista Mar</h2>
-                    <p id="filter-text-animation" class="header__options__houses-option-paragraph">Com uma área de lazer explêndida e   conforto dentro de casa...</p>
-                    <a href="vistaMar.html" class="header__options__houses-anchor">Saiba Mais...</a>
-
-                </div>
-
-                <p id="nf" class="header__options__houses-nf">Perdão, os filtros de pesquisa que selecionou não correspondem a nenhum apartamento ou casa disponível</p>
-            </div>
-
-            <div id="opt1" class="header__options__houses">
-
-                <div id="ap2" class="header__options__houses-div">
-
-                    <h2 class="header__options__houses-title tit2">Sensia Patamares</h2>
-                    <p id="filter-text-animation" class="header__options__houses-option-paragraph">A sensia nasceu para fazer cada pessoa encontrar o seu lugar no mundo...</p>
-                    <a href="moradaDePiata.html" class="header__options__houses-anchor">Saiba Mais...</a>
-
-                </div>
-
-                <div id="ap3" class="header__options__houses-div">
-
-                    <h2 class="header__options__houses-title">Solar Vista Mar</h2>
+                <div id="mar" class="header__options__houses-div">
+                    <h2 class="header__options__houses-title">Vista-Mar</h2>
                     <p id="filter-text-animation" class="header__options__houses-option-paragraph">Com uma área de lazer explêndida e conforto dentro de casa, este paraíso pode...</p>
                     <a href="vistaMar.html" class="header__options__houses-anchor">Saiba Mais...</a>
-
                 </div>
-
                 <p id="nf" class="header__options__houses-nf">Perdão, os filtros de pesquisa que selecionou não correspondem a nenhum apartamento ou casa disponível</p>
-
             </div>
-
         </div>
-        
         <img style="overflow-x: hidden;" class="header__image" src="assets/Outros-Assets/BannerDeFundo (1900 x 500 px).png" alt="">
     </header>
     <img id="fotoZoom" src="" alt="">

@@ -112,9 +112,14 @@
     align-items: center;
 }
 
+.footer__contacts__wpp > a {
+    background: url(../assets/Icons/icons8-whatsapp-32.png) no-repeat left;
+}
+
 .footer__contacts__wpp-anchor,
 .footer__contacts__insta-anchor,
 .footer__contacts__telf-anchor {
+    padding: .5rem 0 .5rem 2rem;
     text-decoration: none;
     font-size: 26px;
     font-weight: 500;
@@ -129,6 +134,10 @@
     transition: 1.4s;
 }
 
+.footer__contacts__insta > a {
+    background: url(../assets/Icons/icons8-instagram-32.png) no-repeat left;
+}
+
 .footer__contacts__insta {
     display: flex;
     align-items: center;
@@ -138,6 +147,11 @@
     display: flex;
     align-items: center;
 }
+
+.footer__contacts__telf > span {
+    background: url(../assets/Icons/telefone.png) no-repeat left;
+}
+
 
 .copyright {
     display: flex;
@@ -176,68 +190,98 @@
         gap: 5rem;
     }
 
-    .form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        gap: 2rem;
+    .footer__form-title {
+        font-size: 16px;
     }
 
-    .form__preencher-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        gap: 1rem;
+    .footer__form__fill {
+        width: 65%;
     }
 
-    .footer__copyright {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        background-color: rgb(214, 214, 214);
-        padding: 4rem 0 2rem 0;
-    }
-    
-    .footer__copyright__texto {
-        font-size: 18px;
-        font-family: var(--fonte-principal);
+    .footer__form__fill-label {
+        font-size: 16px;
         text-align: center;
     }
 
-    .input__form {
-        width: 80%;
+    .footer__form__fill-div-input {
+        padding: 0.5rem 0.7rem;
+        border: transparent;
+        outline: none;
+    }
+
+    .footer__form__fill-div-input-txtA {
+        padding: .4rem 2rem 5rem 1rem;
+        border: transparent;
+        outline: none;
     }
 
     #nome,
     #email,
     #mensagem {
+        font-family: var(--fonte-secundaria);
+        font-weight: 500;
+        color: var(--cor-quinaria);
+    }
+
+    #nome::placeholder,
+    #email::placeholder,
+    #mensagem::placeholder {
+        font-size: 14px;
+        font-family: var(--fonte-secundaria);
+        text-transform: uppercase;
+    }
+
+    .footer__form__fill-button-submit {
+        font-family: var(--fonte-secundaria);
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: .6rem 5rem;
+    }
+
+    .footer__contacts-title {
+        font-family: var(--fonte-secundaria);
+        font-size: 20px;
+    }
+
+    .footer__contacts__wpp > a {
+        background: url(../assets/Icons/icons8-whatsapp-32.png) no-repeat left;
+    }
+
+    .footer__contacts__wpp-anchor {
+        padding: .5rem 0 .5rem 2rem;
+        font-family: var(--fonte-secundaria);
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .footer__contacts__insta > a {
+        background: url(../assets/Icons/icons8-instagram-32.png) no-repeat left;
+    }
+
+    .footer__contacts__insta-anchor { 
+        padding: .5rem 0 .5rem 2rem;
+        font-family: var(--fonte-secundaria);
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .footer__contacts__telf > span {
+        background: url(../assets/Icons/telefone.png) no-repeat left;
+    }
+
+    .footer__contacts__telf-anchor {
+        padding: .5rem 0 .5rem 2rem;
+        font-family: var(--fonte-secundaria);
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .copyright {
+        padding: 1rem 0;   
+    }
+
+    .copyright-txt {
+        font-size: 12px;
         text-align: center;
-        padding: 1rem;
-    }
-
-    .input__form::placeholder {
-        visibility: hidden;
-    }
-
-    .input__form-mensagem {
-        width: 80%;
-    }
-
-    .input__form-mensagem::placeholder {
-        visibility: hidden;
-    }
-
-    .contatos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
     }
 }

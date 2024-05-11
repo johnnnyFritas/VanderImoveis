@@ -108,60 +108,48 @@
         flex-direction: column;
         align-items: center;
         gap: 4rem;
-        margin: 5rem 0;
+        margin-top: -2.4rem;
     }
 
     .highlights-title {
-        font-size: 26px;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: var(--cor-quaternaria);
-        border-bottom: 1px solid var(--cor-quaternaria);
-        padding-bottom: 1rem;
-        width: 80%;
-        text-align: center;
+        font-size: 16px;
+        width: auto;
     }
 
     .swiper {
-        width: 90%;
+        width: 110%;
         margin: 1rem 0;
-    }
-    
-    .swiper-pagination {
-        margin-top: .5rem; 
-    }
-    
-    .swiper-slide img {
-        border-radius: 18px;
     }
     
     .swiper-button-prev,
     .swiper-button-next {
-        color: var(--cor-principal);
+        color: var(--preto);
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 20px;
     }
     
     .highlights__apt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid var(--cor-quaternaria);
-        width: 80%;
-        padding: 1rem .5rem;
+        width: 90%;
     }   
     
     .highlights__apt-title {
-        font-size: 28px;
-        text-align: center;
-        font-weight: 600;
-        color: var(--cor-quaternaria);
-        text-transform: uppercase;
+        font-size: 16px;
     }
     
     .highlights__apt-exp {
-        font-size: 20px;
-        font-weight: 500;
-        width: 90%;
-        font-family: var(--fonte-terciaria);
-        text-align: center;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .highlights__apt-exp > strong {
+        font-size: 18px;
+    }
+
+    .highlights__apt-anchor {
+        font-size: 16px;
+        padding: .5rem 1rem;
     }
 }

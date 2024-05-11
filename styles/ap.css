@@ -9,6 +9,10 @@
     width: 20%;
 }
 
+.paddingHeadAp {
+    margin: -2rem 0 4rem 0;
+}
+
 .headerAp-anchor {
     text-decoration: none;
     text-transform: uppercase;
@@ -97,17 +101,20 @@
 }
 
 .ap__intro__loc-anchor {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    background-color: var(--cor-quaternaria);
+    padding: 1.8rem;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: 1.4s;
+}
+
+.ap__intro__loc-anchor > a {
     font-size: 30px;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--cor-principal);
-    background-color: var(--cor-quaternaria);
-    padding: 1.8rem;
-    border-radius: 80px;
-    transition: 1.4s;
+    background: url(../assets/Icons/icons8-dinheiro-48.png) no-repeat right;
+    padding-right: 4rem;
 }
 
 .ap__intro__loc-anchor:hover {
@@ -153,6 +160,7 @@
 .slidesAp__presentation-div-title {
     font-size: 28px;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 800;
     color: var(--cor-quinaria);
     border-bottom: 3px solid var(--cor-quinaria);
@@ -226,6 +234,10 @@
 }
 
 .hideSection {
+    display: none;
+}
+
+.hideFotoZoom {
     display: none;
 }
 
@@ -346,7 +358,7 @@
 }
 
 .location > img {
-    width: 35%;
+    width: 50%;
     border-radius: 32px;
     cursor: pointer;
 }
@@ -380,7 +392,7 @@
     margin: 4rem 0;
 }
 
-.talkToMe > img {
+.talkToMe > div > img {
     border-radius: 200px;
     border: 1px solid var(--preto);
 }
@@ -393,17 +405,19 @@
 }
 
 .talkToMe-div-title {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
+    background-color: var(--cor-quaternaria);
+    padding: 2rem;
+    border-radius: 56px;
+    transition: 1.4s;
+}
+
+.talkToMe-div-title > a {
     text-decoration: none;
     color: var(--cor-principal);
     font-family: var(--fonte-secundaria);
     text-transform: uppercase;
-    background-color: var(--cor-quaternaria);
-    padding: .5rem 2rem;
-    border-radius: 56px;
-    transition: 1.4s;
+    background: url(../assets/Icons/icons8-telefone-celular-100.png) no-repeat right;
+    padding: 1rem 6rem 1rem 2rem;
 }
 
 .talkToMe-div-title:hover {
@@ -473,5 +487,218 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .headerAp > img {
+        margin-top: -6rem;
+        width: 100%;
+    }
+
+    .headerAp-anchor {
+        font-size: 16px;
+    }
+
+    .paddingHeadAp {
+        margin: 0;
+    }
+
+    .paddingAnchorResponsive {
+        padding-bottom: 1.4rem;
+    }
+
+    .ap__intro {
+        gap: 2.4rem;
+    }
+
+    .ap__intro-title {
+        margin-top: -3rem;
+        font-size: 22px;
+    }
+
+    .ap__intro__loc {
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+
+    .ap__intro__loc__left {
+        gap: 2rem;
+    }
+
+    .ap__intro__loc__left-title {
+        font-size: 14px;
+    }
+
+    .ap__intro__loc__det {
+        flex-direction: column;
+    }
+
+    .ap__intro__loc__det-txt,
+    .ap__intro__loc__det__bed-txt {
+        font-size: 14px;
+        padding: .5rem 1rem;
+    }
+
+    .ap__intro__loc__det__bed {
+        padding: 0rem .6rem;
+        gap: 0;
+    }
+
+    .ap__intro__loc-anchor {
+        background-color: var(--cor-quaternaria);
+        padding: .5rem;
+        border-radius: 80px;
+    }
+
+    .ap__intro__loc-anchor > a {
+        color: var(--cor-principal);
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-right: 1.7rem;
+        text-decoration: none;
+        transition: 1.4s;
+        background: url(../assets/Icons/icons8-dinheiro-24.png) no-repeat right;
+    }
+
+    .centerFotoZoom {
+        width: 100%;
+    }
+
+    .slidesAp__presentation {
+        flex-direction: column;
+    }
+
+    .slidesAp__presentation-div {
+        width: 100%;
+        align-items: center;
+    }
+
+    .slidesAp__presentation-div-title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .slidesAp__presentation-div-text {
+        gap: 2rem;
+    }
+
+    .slidesAp__presentation-div-text > p {
+        font-size: 15px;
+        text-align: center;
+        line-height: 25px;
+    }
     
+    .slidesAp__presentation-div-text > li > h3 {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .responsiveIcon {
+        width: 15%;
+    }
+
+    .datasheet {
+        width: 100%;
+    }
+
+    .datasheet__content {
+        flex-direction: column;
+    }
+
+    .datasheet__content-side-list {
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .datasheet__content-side-list > li > h2,
+    .datasheet__content-side-listRight > li > h2 {
+        text-align: center;
+    }
+
+    .datasheet__content-side-list > li > p,
+    .datasheet__content-side-list > li > div > p{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .datasheet__content-side-listRight {
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .datasheet__content-side-listRight > li > p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .responsiveParagraph {
+        display: none;
+    }
+
+    .location {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .location > img {
+        width: 110%;
+    }
+
+    .location-div-title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .location-div-paragraph {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .zoomLoc {
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 59px;
+    }
+
+    .talkToMe {
+        flex-direction: column;
+    }
+
+    .talkToMe-div {
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .talkToMe-div-title {
+        align-items: center;
+        padding: .8rem;
+    }
+
+    .talkToMe-div-title > a {
+        font-size: 16px;
+        background: url(../assets/Icons/icons8-telefone-celular-30.png) no-repeat right;
+        padding: .5rem 1.7rem 0 0;
+    }
+
+    .talkToMe-div-title > a:hover {
+        background-color: var(--cor-quinaria);
+        transition: 1.4s;
+    }
+
+    .talkToMe > div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .talkToMe-div-anchor {
+        font-size: 16px;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .responsiveFoto {
+        width: 30%;
+    }
 }

@@ -1,80 +1,56 @@
 //local variables
-const generalDiv = document.querySelectorAll('.header__options__houses');
 const filterParagraph = document.querySelectorAll('#filter-text-animation');
 
 //A forEach to select all elements that will appear when you use the filter, then will apply all functions for the animations
-generalDiv.forEach(e => {
-    e.children.item(0).addEventListener('mouseover', ()=> {
-        extendsDivPiata();
-        showParagraphPiata();
-    });
 
-    e.children.item(0).addEventListener('mouseout', ()=> {
-        compressDivPiata();
-        hideParagraphPiata();
-    });
-                    
-    e.children.item(1).addEventListener('mouseover', ()=> {
-        extendsDivMar();
-        showParagraphMar();
-    });
+for(let i = 0; i <= 1; i++) {
+    const opt = [];
+    opt[i] = document.querySelector('#opt' + i);
 
-    e.children.item(1).addEventListener('mouseout', ()=> {
-        compressDivMar();
-        hideParagraphMar();
-    }); 
-});
+    opt.forEach(element => {
+        for(let i = 0; i < 2; i++) {
+            const optChildren = [];
+            optChildren[i] = element.children.item(i);
 
-//This will redirect whoever is clicking on any element of the filter's results (even the background).
-generalDiv.forEach(e => {
-    e.children.item(0).addEventListener('click',()=> {
-        window.location.replace('moradaDePiata.html');
+            optChildren[i].addEventListener('mouseover', ()=> {
+                optChildren[i].classList.remove('pd1');
+                for(let j = 0; j <= 2; j++) {
+                    const optChildrenItem = [];
+                    optChildrenItem[j] = optChildren[i].children.item(j);
+
+                    optChildrenItem[j].classList.add('mouseIn-animation');
+
+                    if(optChildrenItem[1]) {
+                        optChildrenItem[1].classList.add('filterParagraphIn');
+                    }
+
+                    optChildrenItem[j].classList.remove('mouseOut-animation');
+
+                    optChildrenItem[j].classList.remove('filterParagraphOut');
+
+                    if(optChildren[0]) {
+                        optChildren[0].classList.add('background-animationPiata');
+                    }else if(optChildren[1]) {
+                        optChildren[1].classList.add('background-animationMar');
+                    }
+                }
+            });
+
+            optChildren[i].addEventListener('mouseout', ()=> {
+                for(let j = 0; j <= 2; j++) {
+                    const optChildrenItem = [];
+                    optChildrenItem[j] = optChildren[i].children.item(j);
+
+                    optChildrenItem[j].classList.add('mouseOut-animation');
+
+                    if(optChildrenItem[1]) {
+                        optChildrenItem[1].classList.remove('filterParagraphIn');
+                        optChildrenItem[1].classList.add('filterParagraphOut');
+                    }
+                }
+            });
+        } 
+
+        
     });
-
-    e.children.item(1).addEventListener('click', ()=> {
-        window.location.replace('vistaMar.html');
-    });
-});
-
-//functions used above
-function extendsDivPiata() {
-    piata.classList.add('mouseIn-animation');
-    piata.classList.add('background-animationPiata');
-    piata.classList.remove('mouseOut-animation');
 }
-
-function compressDivPiata() {
-    piata.classList.add('mouseOut-animation');
-    piata.classList.remove('mouseIn-animation');
-}
-
-function extendsDivMar() {
-    mar.classList.add('mouseIn-animation');
-    mar.classList.add('background-animationMar');
-    mar.classList.remove('mouseOut-animation');
-}
-
-function compressDivMar() {
-    mar.classList.add('mouseOut-animation');
-    mar.classList.remove('mouseIn-animation');
-}
-
-function showParagraphPiata() {
-    filterParagraph[0].classList.add('filterParagraphIn');
-    filterParagraph[0].classList.remove('filterParagraphOut');
-};
-
-function hideParagraphPiata() {
-    filterParagraph[0].classList.add('filterParagraphOut');
-    filterParagraph[0].classList.remove('filterParagraphIn');
-};
-
-function showParagraphMar() {
-    filterParagraph[1].classList.add('filterParagraphIn');
-    filterParagraph[1].classList.remove('filterParagraphOut');
-};
-
-function hideParagraphMar() {
-    filterParagraph[1].classList.add('filterParagraphOut');
-    filterParagraph[1].classList.remove('filterParagraphIn');
-};

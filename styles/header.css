@@ -25,29 +25,23 @@
 
 .header__options-LogImg-Ent {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: .3rem;
 }
 
-.header__options-LogImg-Ent-Act {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
 .header__options-LogImg-Ent-Act-But {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 28px;
     font-family: var(--fonte-secundaria);
     color: var(--cor-quaternaria);
+    text-transform: uppercase;
     background: transparent;
     border-bottom: none;
     border-left: none;
-    border-top: none;
-    border-right: 2px solid var(--cor-quaternaria);
+    border-top: 1px solid var(--cor-quaternaria);
+    border-right: none;
     transition: 1.4s;
 }
 
@@ -61,11 +55,11 @@
 }
 
 .padding {
-    padding-right: 1rem;
+    padding: .5rem .7rem;
 }
 
 .paddingL {
-    padding-left: .8rem;
+    padding: .5rem 0;
 }
 
 .header__options-LogImg-Ent-ActReg {
@@ -82,41 +76,45 @@
     transition: 1.4s;
 }
 
-.header__options-contact:hover {
-    color: var(--cor-terciaria);
-    border-bottom: 1px solid var(--cor-terciaria);
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    transition: 1.4s;
-}
-
 /* adjustments for 1366px width screens or lower! */
 @media screen and (max-width: 1366px) {
-    
-    .header__options > a > img {
-        margin-top: -9rem;
-        width: 80%;
-    }
-
-    .header__image {
-        margin-top: -18rem;
-    }
-
-    .header__options__contact {
-        font-size: 26px;
-        margin-top: -8rem;
-    }
 
     @media screen and (max-width: 1024px) {
 
-        .header__options > a > img {
-            width: 50%;
-            margin-top: -4rem;
+        .header__options-LogImg {
+            flex-direction: column;
+            gap: 0;
+            margin-top: 0rem;
         }
-    
-        .header__options__contact {
-            font-size: 28px;
+
+        .header__options-LogImg > a > img {
+            margin-top: -2rem;
+            margin-left: 0;
+            width: 70%;
+        }
+
+        .header__options-LogImg-Ent {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header__options-LogImg-Ent-Act-But {
+            font-size: 14px;
+            text-transform: uppercase;
+            background: transparent;
+            border-right: transparent;
+        }
+
+        .padding {
+            padding: .5rem 0 2rem 0;
+        }
+
+        .paddingL {
+            padding: 0 0 .3rem 0;
+        }
+
+        .borderDownResp {
+            border-bottom: transparent;
         }
 
         .header__image {

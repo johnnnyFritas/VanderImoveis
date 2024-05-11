@@ -37,6 +37,7 @@
 }
 
 .animationFilterHel {
+    padding-top: 5rem;
     font-size: 0;
 
     animation-name: filterH2WelAnimation;
@@ -236,16 +237,15 @@
     }
 }
 
-.header__options__houses-piata-Vis {
+.header__options__houses-Vis {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
     padding: 2rem 0rem;
-    width: 50%;
+    width: 40%;
     border: 1px solid #7a6953;
     border-radius: 10px;
-    background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundStatic.jpg") no-repeat center;
     transition: 1.4s;
     position: relative;
     cursor: pointer;
@@ -255,36 +255,39 @@
     animation-iteration-count: 1;
 }
 
-.header__options__houses-mar-Vis {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-    padding: 2rem 0rem;
-    width: 50%;
-    border: 1px solid #7a6953;
-    border-radius: 10px;
-    background: url("../assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundStatic.png") no-repeat center;
-    transition: 1.4s;
-    position: relative;
-    cursor: pointer;
+.pd1 {
+    padding: 2.5rem 0;
+}
 
-    animation-name: leftToRight;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
+.piata {
+    background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiataDefault.png") no-repeat center;
+}
+
+.vistaMar {
+    background: url("../assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundStatic.png") no-repeat center;
+}
+
+.sensia {
+    background: url("../assets/imagesToAnimate/sensiaAnimations/sensiaLogoDefault.jpeg") no-repeat center;
 }
 
 .header__options__houses-title {
     font-size: 40px;
+    font-family: var(--fonte-secundaria);
     text-transform: uppercase;
     color: var(--cor-principal);
+}
+
+.tit2 {
+    color: black;
 }
 
 .header__options__houses-option-paragraph {
    color: transparent;
    font-family: var(--fonte-terciaria);
-   font-size: 24px;
-   width: 90%;
+   font-size: 16px;
+   line-height: 26px;
+   width: 80%;
 }
 
 .header__options__houses-anchor {
@@ -312,7 +315,7 @@
 }
 
 .header__options__houses-nf-Vis{
-    font-size: 26px;
+    font-size: 16px;
     color: var(--cor-quaternaria);
     font-weight: 600;
     width: 80%;
@@ -330,7 +333,7 @@
 }
 
 .filterParagraphIn {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--cor-principal);
     font-family: var(--fonte-terciaria);
     width: 90%;
@@ -374,16 +377,26 @@
 
 @keyframes backgroundAnimationPiata {
     0% {
-        background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundStatic.jpg") no-repeat center;
+        background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiataDefault.png") no-repeat center;
     }
 
     100% {
-        background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundTransparent.png") no-repeat center;
+        background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiataTransp.png") no-repeat center;
+    }
+}
+
+@keyframes backgroundAnimationSensia {
+    0% {
+        background: url("../assets/imagesToAnimate/sensiaAnimations/sensiaBackgDefault.png") no-repeat center;
+    }
+
+    100% {
+        background: url("../assets/imagesToAnimate/sensiaAnimations/sensiaBackgTransp.png") no-repeat center;
     }
 }
 
 .background-animationPiata {
-    background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundTransparent.png") no-repeat center;
+    background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiataTransp.png") no-repeat center;
 
     animation: backgroundAnimationPiata;
     animation-duration: 1.4s;
@@ -396,8 +409,15 @@
     animation-duration: 1.4s;
 }
 
+.background-animationSensia {
+    background: url("../assets/imagesToAnimate/sensiaAnimations/sensiaBackgTransp.png") no-repeat center;
+
+    animation: backgroundAnimationMar;
+    animation-duration: 1.4s;
+}
+
 .filterParagraphOut {
-    font-size: 20px;
+    font-size: 16px;
     color: transparent;
     font-family: var(--fonte-terciaria);
     text-transform: uppercase;
@@ -412,97 +432,346 @@
 /* adjustments for 1366px width screens AND lower! */
 @media screen and (max-width: 1366px) {
 
-    .header__options__filter-title {
-        font-size: 26px;
+    .header__options__filter-div-reg,
+    .header__options__filter-div-type,
+    .header__options__filter-div-fin {
+        font-size: 0;
+        background: transparent;
+        border: none;
+        -webkit-appearance: none;
     }
 
-    #finalidade,
-    #regiao,
-    #tipo {
-        font-size: 18px;
+    .animationFilterId {
+        padding: .5rem 1rem;
+        font-size: 20px;
     }
-
-    .header__options__filter-search {
-        font-size: 18px;    
+    
+    .animationFilterId2 {
+        padding: .5rem 3rem;
+        font-size: 20px;
+        font-family: var(--fonte-principal);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--cor-quaternaria);
+        background: transparent;
+        border: none;
+        -webkit-appearance: none;
+    
+        animation-name: filterIdAnimation;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
     }
 
     @media screen and (max-width: 1024px) {
+        .header__options__filter-welAnim {
+            font-size: 0;
+            color: var(--cor-quaternaria);
+        }
+        
+        .header__options__filter-welAnim2 {
+            font-size: 0;
+            color: var(--cor-quaternaria);
+        }
+
         .header__options__filter {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 2rem;
+            margin: .4rem 0;
         }
-    
-        .header__options__filter-title {
-            font-size: 28px;
-            font-weight: 600;
-        }
-    
+
         .header__options__filter-div {
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
+
+        @keyframes filterH2WelAnimation {
+            0% {
+                font-size: 0;
+                text-transform: uppercase;
+                color: var(--cor-quinaria);
+            }
+        
+            50% {
+                font-size: 20px;
+                text-transform: uppercase;
+                color: var(--cor-quaternaria);
+            }
+        
+            100% {
+                font-size: 0px;
+                text-transform: uppercase;
+                color: var(--cor-quinaria);
+            }
+        }
+
+        @keyframes filterAnimation {
+            0% {
+                color: var(--cor-quinaria);
+                font-size: 0;
+            }
+        
+            100% {
+                color: var(--cor-quaternaria);
+                font-size: 16px;
+            }
+        }
+
+        .header__options__filter-titleAnim {
+            text-transform: uppercase;
+            color: var(--cor-quaternaria);
+            position: relative;
+            font-size: 16px;
+        
+            animation-name: filterAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+        
     
-        .header__options__filter-div-finalidade,
-        .header__options__filter-div-região,
-        .header__options__filter-div-tipo {
+        .header__options__filter-div-reg,
+        .header__options__filter-div-type,
+        .header__options__filter-div-fin {
+            font-size: 0;
+            background: transparent;
+            border: none;
+            -webkit-appearance: none;
+        }
+
+        .animationFilterId {
+            padding: .1rem 0;
+            font-size: 16px;
+            font-family: var(--fonte-principal);
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--cor-quaternaria);
+            background: transparent;
+            border: none;
+            -webkit-appearance: none;
+        
+            animation-name: filterIdAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+
+        .animationFilterId2 {
+            padding: .1rem 0;
+            font-size: 16px;
+            font-family: var(--fonte-principal);
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--cor-quaternaria);
+            background: transparent;
+            border: none;
+            -webkit-appearance: none;
+        
+            animation-name: filterIdAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes filterDivAnimation {
+            0% {
+                background: none;
+                border: 1px solid var(--cor-quinaria);
+            }
+        
+            100% {
+                background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
+                border: 1px solid var(--cor-quaternaria);
+            }
+        }
+        
+        .animationFilterDiv {
             background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
-            border: 1px solid var(--cor-quinaria);
+            border: 1px solid var(--cor-quaternaria);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            animation-name: filterDivAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
         }
-    
+
+        .animationFilterButton {
+            padding: .2rem 1rem;
+            font-size: 14px;
+            font-family: var(--fonte-principal);
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--cor-quaternaria);
+            transition: box-shadow 1s ease; 
+            background-color: var(--anchor-color);
+            border: 1px solid var(--anchor-color);
+            border-radius: 32px;
+            cursor: pointer;
+            transition: 1s;
+        
+            animation-name: filterButtonAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+
         .header__options__houses {
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-    
-        .header__options__houses-mar-Vis {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 3rem 0rem;
-            width: auto;
-            border: 1px solid #7a6953;
-            border-radius: 10px;
-            background: transparent;
-        }
-    
-        .header__options__houses-piata-Vis {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 3rem 0rem;
-            width: auto;
-            border: 1px solid #7a6953;
-            border-radius: 10px;
-            background: transparent;
-        }
-    
-        .header__options__houses-title {
-            font-size: 32px;
-            text-transform: uppercase;
-            color: var(--cor-quinaria);
-        }
-    
-        .header__options__houses-option-paragraph{
-            width: 90%;
-            font-size: 20px;
-            color: var(--cor-quaternaria);
-            font-weight: 400;
-            text-align: center;
             padding: 2rem 0;
+        }
+
+        .header__options__houses-piata-Vis {
+            gap: 0rem;
+            padding: 2rem 0rem;
+            width: 80%;
+            background: url("../assets/responsiveFotos/filterMoradaP-Responsive.png") no-repeat center;
+            cursor: default;
+        
+            animation-name: leftToRight;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+        }
+        
+        .header__options__houses-mar-Vis {
+            gap: 0rem;
+            padding: 2rem 0rem;
+            width: 80%;
+            background: url("../assets/responsiveFotos/filterVistaM-Responsive.png") no-repeat center;
+            cursor: default;
+        }
+
+        .header__options__houses-title {
+            font-size: 15px;
+        }
+        
+        .header__options__houses-option-paragraph {
+           display: none;
+        }
+        
+        .header__options__houses-anchor {
+            font-size: 10px;
+            font-weight: 500;
+            border: 1px solid var(--cor-quaternaria);
+            border-radius: 8rem;
+            background-color: var(--cor-quaternaria);
+            text-decoration: none;
             text-transform: uppercase;
+            color: var(--cor-principal);
+            margin-top: 2rem;
+            padding: .4rem 1rem;
+            transition: 1s;
         }
-    
-        #finalidade {
-            padding: .5rem 2rem;
+        
+        .header__options__houses-anchor:hover {
+            background-color: var(--cor-secundaria);
+            border: 1px solid var(--cor-quaternaria);
+            color: var(--cor-quinaria);
+            transition: 1s;
         }
-    
-        #regiao,
-        #tipo {
-            padding: .5rem;
-            text-align: center;
+        
+        .header__options__houses-nf {
+            display: none;
+        }
+        
+        .header__options__houses-nf-Vis{
+            font-size: 15px;
+            color: var(--cor-quaternaria);
+            font-weight: 600;
+            width: 80%;
+            text-transform: uppercase;
+            padding-bottom: 2rem;
+        
+            animation-name: apareceNf;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+        
+        /* The code for all of the filter animations are right below */
+        .mouseIn-animation {
+            gap: 4.5rem;
+        }
+        
+        .filterParagraphIn {
+            font-size: 20px;
+            color: var(--cor-principal);
+            font-family: var(--fonte-terciaria);
+            width: 90%;
+            text-transform: uppercase;
+            transition: 1.4s;
+        
+            animation-name: filterParagraphIn;
+            animation-duration: 1.4s;
+            animation-iteration-count: 1;
+        }
+        
+        @keyframes filterParagraphIn {
+            0% {
+                color: transparent;
+            }
+        
+            100% {
+                color: var(--cor-principal);
+            }
+        }
+        
+        @keyframes filterParagraphOut {
+            0% {
+                color: var(--cor-principal);
+            }
+        
+            100% {
+                color: transparent;
+            }
+        }
+        
+        @keyframes backgroundAnimationMar {
+            0% {
+                background: url("../assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundStatic.png") no-repeat center;
+            }
+        
+            100% {
+                background: url("../assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundTransparent.png") no-repeat center;
+            }
+        }
+        
+        @keyframes backgroundAnimationPiata {
+            0% {
+                background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundStatic.jpg") no-repeat center;
+            }
+        
+            100% {
+                background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundTransparent.png") no-repeat center;
+            }
+        }
+        
+        .background-animationPiata {
+            background: url("../assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundTransparent.png") no-repeat center;
+        
+            animation: backgroundAnimationPiata;
+            animation-duration: 1.4s;
+        }
+        
+        .background-animationMar {
+            background: url("../assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundTransparent.png") no-repeat center;
+        
+            animation: backgroundAnimationMar;
+            animation-duration: 1.4s;
+        }
+        
+        .filterParagraphOut {
+            font-size: 20px;
+            color: transparent;
+            font-family: var(--fonte-terciaria);
+            text-transform: uppercase;
+            width: 90%;
+        
+            animation-name: filterParagraphOut;
+            animation-duration: 1.4s;
+            animation-iteration-count: 1;
         }
     }
 }
